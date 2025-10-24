@@ -14,6 +14,7 @@ const generateToken = (id) => {
 const login = async (req, res) => {
   try {
     const { email, password } = req.body;
+    console.log("data",req.body)
 
     // Validate input
     if (!email || !password) {

@@ -58,6 +58,8 @@ const addClient = async (req, res) => {
     });
 
     await client.save();
+    console.log("Created client response:", createdClient);
+
 
     res.status(201).json({
       success: true,
