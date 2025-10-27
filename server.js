@@ -22,6 +22,8 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/dashboard', require('./routes/dashboardRoutes'));
 app.use('/api/clients', require('./routes/clientRoutes'));
 app.use('/api/products', require('./routes/productRoutes'));
+app.use('/api/developers', require('./routes/developerRoutes'));
+
 
 // Health check route
 app.get('/api/health', (req, res) => {

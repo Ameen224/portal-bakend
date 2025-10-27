@@ -69,7 +69,7 @@ const addClient = async (req, res) => {
           id: client._id,
           name: client.name,
           email: client.email,
-          projects: client.projects,
+          projects: client.projects, 
           status: client.status,
           createdAt: client.createdAt
         }
